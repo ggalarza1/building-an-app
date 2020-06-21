@@ -5,10 +5,9 @@
 + Create a Google project.
 + Structure your web service files/ Upload links and files needed.
 + Testing your web service.
-+ Deploying your service. 
 
-1. Install the latest version of Python.
-This can be done by going to the python website. Make sure you select Add my path before installing the python program.
+## 1. Install the latest version of Python.
+This can be done by going to the [python](https://www.python.org/downloads/) website. Make sure you select Add my path before installing the python program.
 
 If you have python already installed, there are a couple of ways to check.
 Use the following command to start the latest python version you have in your environment.
@@ -24,7 +23,7 @@ Use this command to verify the version of python you have
 pip --version  
 ```
 
-2. Install latest Cloud SDK version to run
+## 2. Install latest Cloud SDK version to run
 Open PowerShell and run the following commands.
 
 ```
@@ -35,7 +34,7 @@ Open PowerShell and run the following commands.
 Once the download is finished, start Cloud shell.
 Run ```gcloud init ``` to log in.
 
-3. Create a Cloud Project
+## 3. Create a Cloud Project
 Use the following command in the Cloud Shell to create a Cloud Project.
 ```
 gcloud projects create PICK_A_NAME
@@ -46,7 +45,7 @@ gcloud app create
 ```
 Enable billing for your project. Running only the sample app in this topic does not exceed the free quotas.
 
-4. Structure your web service files
+## 4. Structure your web service files
 Clone the project into your directory
 ```
 git clone https://github.com/GoogleCloudPlatform/python-docs-samples
@@ -57,7 +56,7 @@ Change your directory to open the folder where the application lies
 cd python-docs-samples/appengine/standard_python37/building-an-app/building-an-app-1
 ```
 
-5. Testing your web service.
+## 5. Testing your web service.
 
 Create a python environment by inputting the following command line PowerShell
 ```
@@ -84,9 +83,4 @@ python main.py
 In your web browser enter the following command.
 ```
 http://localhost:8080
-```
-5. Deploying your service
-By running the following command, you deploy to your web service, making a new version of the app in App Engine.
-```
-gcloud app deploy
 ```
