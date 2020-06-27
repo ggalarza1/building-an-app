@@ -60,18 +60,13 @@ cd python-docs-samples/appengine/standard_python37/building-an-app/building-an-a
 
 Create a python environment by inputting the following command line PowerShell
 ```
-python -m venv env
-env\Scripts\activate
-```
-
-If you receive an error trying to create the python environment. Use this command.
-```
-Set-ExecutionPolicy Unrestricted -Scope Process
+virtualenv env
+source env/bin/activate
 ```
 
 Move to the App folder and install the requirements for the app.
 ```
-cd YOUR_PROJECT or  cd python-docs-samples/appengine/standard_python37/building-an-app/building-an-app-1      
+cd building_an_app or  cd python-docs-samples/appengine/standard_python37/building-an-app/building-an-app-1      
 pip install -r requirements.txt
 ```
 
